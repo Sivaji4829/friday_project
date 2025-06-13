@@ -1,0 +1,13 @@
+Flask
+SpeechRecognition
+pyttsx3
+wikipedia
+gTTS
+pygame
+requests
+beautifulsoup4
+cohere
+wolframalpha
+transformers
+torch
+ecapture

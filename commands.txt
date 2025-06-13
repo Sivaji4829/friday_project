@@ -1,0 +1,104 @@
+# Run the app
+python app.py
+
+# Access the assistant at:
+http://127.0.0.1:5000/
+
+# API Endpoints:
+
+POST /assistant – send a JSON {"command": "<your command>"} to get AI response
+
+GET /startup – returns greeting, quote, riddle, and history
+
+POST /save_chat – saves chat messages as JSON
+
+POST /weather – send JSON {"city": "<city name>"} to get weather data
+
+✅ General Commands
+
+"who are you"
+
+"what can you do"
+
+"who made you"
+
+"hello" / "hi"
+
+"thank you" / "bye"
+
+"wake up daddy's home"
+
+"do you know me"
+
+"how are you"
+
+🧠 AI & NLP Features
+
+"summarize <text>"
+
+"classify <text>"
+
+"search <topic>"
+
+"wikipedia <topic>"
+
+"calculate <expression>"
+
+"what is <concept>"
+
+"quote"
+
+"fun fact"
+
+"greeting"
+
+🎵 Music Control
+
+"play music"
+
+"pause music"
+
+"resume music"
+
+"next song"
+
+📸 Camera & Media
+
+"take photo" / "open camera"
+
+🌐 Web & Apps
+
+"open youtube"
+
+"open google"
+
+"open gmail"
+
+🕒 Date & Time
+
+"what is the time"
+
+"what is today's date"
+
+📽 Entertainment
+
+"joke"
+
+"recommend movies"
+
+"what is the capital of <country>"
+
+🔌 System Control
+
+"shutdown"
+
+🌦 Weather (POST /weather)
+Send: {"city": "Hyderabad"}
+Returns: weather info
+
+💬 Startup Info (GET /startup)
+Returns: greeting, quote, riddle, history
+
+💾 Save Chat (POST /save_chat)
+Send: {"user": "your message", "bot": "assistant's reply"}
+Saves to chatHistory.json
